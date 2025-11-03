@@ -8,7 +8,7 @@
         }
         &-input{
             outline: none;
-            width: 55rem;
+            width: 40rem;
             @include responsive (tablet){
                 width: 100% !important;
                 padding: 1.5rem !important;
