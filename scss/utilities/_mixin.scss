@@ -1,0 +1,50 @@
+@mixin centrize-tag($align:center,$justify:center){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+@mixin line-break($line:2){
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+// 0-576px=phone
+// 576px-768px=phone landscape
+// 768px-992px=table
+// 992px-1200px=table landscape
+// 1200px-1800px=laptop
+// 1800px > =big desktop
+
+@mixin responsive ($breakpoint){
+    // phone breakpoint------- 576px ~36em
+    @if $breakpoint==phone{
+        @media only screen and (max-width:36em){
+            @content;
+        }
+    }
+    // phone landscape breakpoint------- 768px ~48em
+        @if $breakpoint==phonel{
+        @media only screen and (max-width:48em){
+            @content;
+        }
+    }
+    // tablet  breakpoint------- 992px ~62em
+        @if $breakpoint==tablet{
+        @media only screen and (max-width:62em){
+            @content;
+        }
+    }
+    // tablet landscape breakpoint------- 1200px ~75em
+        @if $breakpoint==tabletl{
+        @media only screen and (max-width:75em){
+            @content;
+        }
+    }
+    // laptop breakpoint------- 1800px ~112.5em
+        @if $breakpoint==laptop{
+        @media only screen and (max-width:112.5em){
+            @content;
+        }
+    }
+}

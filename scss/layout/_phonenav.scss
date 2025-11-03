@@ -1,0 +1,5 @@
+.phonenav{
+    @include responsive(tablet){
+        display: block !important;
+    }
+}

@@ -1,0 +1,31 @@
+// -------------witdh class-------------
+.container2xl{
+    width: 80vw;
+    margin: 0 auto;
+    @include responsive(tablet){
+        width: 98vw;
+    }
+}
+// ---------flex class---------
+.flex-center{
+    @include centrize-tag();
+}
+.flex-between{
+    @include centrize-tag($justify:space-between);
+}
+.flex-around{
+    @include centrize-tag($justify:space-around);
+}
+// --------ellipsis class--------
+.ellipsis-1{
+    @include line-break(1);
+}
+.ellipsis-2{
+    @include line-break();
+}
+.ellipsis-3{
+    @include line-break(3);
+}
+.text-justify{
+    text-align: justify;
+}

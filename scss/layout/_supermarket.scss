@@ -1,0 +1,18 @@
+.supermarket{
+    &__content{
+        &-item{
+            @include responsive(tablet){
+                min-width: 100%;
+            }
+        }
+    }
+    &__item{
+        width: 7rem;
+        height:7rem;
+        &-more{
+            width: 14rem;
+            height: 5rem;
+        }
+        
+    }
+}

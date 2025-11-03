@@ -1,0 +1,31 @@
+.digiclub{
+    &__content{
+        @include responsive(tablet){
+            border-radius: 0 !important;
+        }
+        &-col{
+            @include responsive(phonel){
+            width: 100% !important;
+            @include centrize-tag();
+            }
+        }
+        &-img{
+            @include responsive(phonel){
+                width: 20% !important;
+            }
+               @include responsive(phone){
+                width: 50% !important;
+            }
+        }
+        &-item{
+            @include responsive(phone){
+                border-radius: 2rem !important;
+            }
+        }
+        &-text{
+            @include responsive(phone){
+                font-size: 2rem !important;
+            }
+        }
+    }
+}

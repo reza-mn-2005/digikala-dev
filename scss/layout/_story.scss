@@ -1,0 +1,30 @@
+.story{
+    cursor: grab;
+    &__item{
+        width: 8rem;
+        height: 8rem;
+        @include responsive(phonel){
+            width: 9rem;
+            height: 9rem;
+        }
+    }
+    &__text{
+        max-width: 10rem;
+        @include line-break();
+    }
+    &__btn{
+        width: 3rem;
+        height: 3rem;
+        font-size: 0.5rem;
+        background-color: $white;
+        color: $subtitle;
+        border: 1px solid $subtitle;
+        border-radius: 100%;
+        @include responsive(tablet){
+            display: none;
+        }
+        &::after{
+            font-size: 1.5rem;
+        }
+    }
+}

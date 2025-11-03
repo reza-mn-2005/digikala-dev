@@ -1,0 +1,36 @@
+// ---------------------other colors---------------------
+$white:    #fff ;
+$gray-100: #f8f9fa ;
+$gray-200: #e9ecef ;
+$gray-300: #dee2e6 ;
+$gray-400: #ced4da ;
+$gray-500: #adb5bd ;
+$gray-600: #6c757d ;
+$gray-700: #495057 ;
+$gray-800: #343a40 ;
+$gray-900: #212529 ;
+$black:    #000 ;
+// -------------------- main colors--------------------
+$primary:#941B80;
+$secondary:#19bed1;
+$secondaryDark:#3c4b6d;
+$tertiary:#EF394E;
+$subtitle:#818489;
+$search:#eaeaec;
+$gray:#e1e1e1;
+$success:#3bae03;
+// ---------------------color map---------------------
+$theme-colors: (
+ "primary": $primary,
+"secondary": $secondary,
+"tertiary": $tertiary,
+"subtitle": $subtitle,
+"search":$search,
+"gray":$gray,
+"success":$success,
+"secondaryDark":$secondaryDark,
+)
+
+
+// ------------------font size------------------
+

@@ -1,0 +1,15 @@
+.mostsell{
+    &__content{
+        @include responsive(tablet){
+            border: none !important;
+        }
+        &-item{
+            min-width: 35rem;
+        }
+        &-text{
+            @include responsive(tablet){
+                position: static;
+            }
+        }
+    }
+}
